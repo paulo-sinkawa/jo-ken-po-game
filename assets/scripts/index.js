@@ -26,7 +26,7 @@ const opcaoJogador = ""; // Verificar como será lancada a opcao do jogar e veri
 //   console.log('Vitoria !');
 // } else if (quartaOpcao | |  quintaOpcao | |  sextaOpcao){
 //   console.log('Derrota !')
-// } else if (seventhPossibility) {
+// } else if (setimaOpcao) {
 //   console.log('Empate !');
 //   else {
 //     console.log('Erro ! Reinicie o jogo.')

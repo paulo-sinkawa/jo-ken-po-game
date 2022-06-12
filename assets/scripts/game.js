@@ -8,4 +8,7 @@ class Game {
     this.papel = "./assets/images/papel.jpg";
     this.pedra = "./assets/images/pedra.jpg";
   }
+  boardGenerator() {
+    const image = document.createElement("img");
+  }
 }

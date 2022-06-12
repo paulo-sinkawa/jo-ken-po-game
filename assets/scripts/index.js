@@ -20,7 +20,7 @@ const opcaoJogador = ""; // Verificar como será lancada a opcao do jogar e veri
 // quartaOpcao = opcaoComputador === rock && opcaoJogador === scissors;
 // quintaOpcao = opcaoComputador === scissors && opcaoJogador === paper;
 // sextaOpcao = opcaoComputador === paper && opcaoJogador === rock;
-// setimaOpcao = firstPlayerChoice === opcaoComputador;
+// setimaOpcao = opcaoJogador === opcaoComputador;
 
 // if (primeiraOpcao  | | segundaOpcao | | terceiraOpcao){
 //   console.log('Vitoria !');

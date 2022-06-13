@@ -1,10 +1,14 @@
 let h1 = document.getElementById("h1");
-h1.innerText = "Teste aaaaaaaaaaaaaaaaaaaaaa2";
+h1.innerText = "Jo-Ken-Po"; // Somente para teste.
 
 const gameBoard = document.getElementById("game-board");
 const startBtn = document.getElementById("start");
 
-const game = new Game(gameboard);
+const game = new Game(gameBoard);
+
+startBtn.addEventListener("click", () => {
+  game.boardGenerator();
+});
 
 // Condicoes das jogadas.
 
@@ -12,7 +16,7 @@ const pedra = "pedra"; // Como declarar se a variavel sera por "string" ou pela 
 const tesoura = "tesoura";
 const papel = "papel";
 
-const opcaoJogador = ""; // Verificar como será lancada a opcao do jogar e verificar qual foi a opcao.
+const opcaoJogador = ""; // Verificar como será lancada a opcao do jogador e verificar qual foi a opcao.
 
 // primeiraOpcao = opcaoJogador === rock && opcaoComputador === scissors;
 // segundaOpcao = opcaoJogador === scissors && opcaoComputador === paper;
@@ -22,7 +26,7 @@ const opcaoJogador = ""; // Verificar como será lancada a opcao do jogar e veri
 // sextaOpcao = opcaoComputador === paper && opcaoJogador === rock;
 // setimaOpcao = opcaoJogador === opcaoComputador;
 
-// if (primeiraOpcao  | | segundaOpcao | | terceiraOpcao){
+// if (primeiraOpcao  | | segundaOpcao | | terceiraOpcao) {
 //   console.log('Vitoria !');
 // } else if (quartaOpcao | |  quintaOpcao | |  sextaOpcao){
 //   console.log('Derrota !')

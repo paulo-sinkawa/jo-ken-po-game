@@ -2,12 +2,26 @@ let h1 = document.getElementById("h1");
 h1.innerText = "Jo-Ken-Po"; // Somente para teste.
 
 const gameBoard = document.getElementById("game-board");
-const startBtn = document.getElementById("start");
+const iniciarBtn = document.getElementById("start");
+const jogarPedra = document.getElementById("pedra");
+const jogarPapel = document.getElementById("papel");
+const jogarTesoura = document.getElementById("tesoura");
 
 const game = new Game(gameBoard);
 
-startBtn.addEventListener("click", () => {
-  game.boardGenerator();
+iniciarBtn.addEventListener("click", () => {
+  game.iniciaOJogo();
+  jogarPedra.addEventListener("click", () => {
+    game.jogadaPedra();
+  });
+
+  jogarPapel.addEventListener("click", () => {
+    game.jogadaPapel();
+  });
+
+  jogarTesoura.addEventListener("click", () => {
+    game.jogadaTesoura();
+  });
 });
 
 // Condicoes das jogadas.

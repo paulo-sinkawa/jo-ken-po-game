@@ -11,7 +11,7 @@ class Game {
     this.tesoura = "../assets/images/tesoura.jpg";
     this.papel = "../assets/images/papel.jpg";
     this.pedra = "../assets/images/pedra.jpg";
-    this.boardCriado = false;
+    this.boardCriado = false; // Somente para verificar a condicao e nao deixar imprimir outra img qndo o botao for clicado.
   }
 
   boardGenerator() {

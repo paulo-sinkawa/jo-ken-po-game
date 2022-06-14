@@ -26,6 +26,9 @@ escolherTesoura.addEventListener("click", () => {
   game.verificaVencedor();
 });
 
+//mostrarJogadaComputador() - Evento que vai separar por parte a jogada do jogador, depois ele clicar em
+//um botao para fazer a jogada do computador e mostrar a jogada e imprimir o resultado.
+
 // iniciarBtn.addEventListener("click", () => {
 //   game.iniciaOJogo();
 // });

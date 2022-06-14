@@ -47,6 +47,7 @@ class Game {
   jogadaComputador() {
     if (!this.compJajogou) {
       this.opcaoComputador = Math.random();
+      console.log(this.opcaoComputador);
       if (this.opcaoComputador < 0.33333) {
         this.opcaoComputador = "pedra";
         this.compJajogou = true;
@@ -63,34 +64,53 @@ class Game {
 
   verificaVencedor() {
     if (this.opcaoJogador === "pedra" && this.opcaoComputador === "tesoura") {
-      alert("Voce venceu !");
+      alert(
+        "O computador escolheu tesoura, voce venceu ! Aperte F5 para jogar novamente"
+      );
+      return;
     } else if (
       this.opcaoJogador === "tesoura" &&
       this.opcaoComputador === "papel"
     ) {
-      alert("Voce venceu !");
+      alert(
+        "O computador escolheu papel, voce venceu ! Aperte F5 para jogar novamente"
+      );
+      return;
     } else if (
       this.opcaoJogador === "papel" &&
       this.opcaoComputador === "pedra"
     ) {
-      alert("Voce venceu !");
+      alert(
+        "O computador escolheu pedra, voce venceu ! Aperte F5 para jogar novamente"
+      );
+      return;
     } else if (
       this.opcaoComputador === "pedra" &&
       this.opcaoJogador === "tesoura"
     ) {
-      alert("Voce perdeu !");
+      alert(
+        "O computador escolheu pedra, voce perdeu ! Aperte F5 para jogar novamente"
+      );
+      return;
     } else if (
       this.opcaoComputador === "tesoura" &&
       this.opcaoJogador === "papel"
     ) {
-      alert("Voce perdeu !");
+      alert(
+        "O computador escolheu tesoura, voce perdeu ! Aperte F5 para jogar novamente"
+      );
+      return;
     } else if (
       this.opcaoComputador === "papel" &&
       this.opcaoJogador === "pedra"
     ) {
-      alert("Voce perdeu !");
+      alert(
+        "O computador escolheu papel, voce perdeu ! Aperte F5 para jogar novamente"
+      );
+      return;
     } else {
       alert("Empate !");
+      return;
     }
   }
 }

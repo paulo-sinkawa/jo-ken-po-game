@@ -3,11 +3,11 @@ class Game {
     // Sera onde iremos criar toda a plataforma do jogo.
     this.gameBoard = gameBoard; //
     this.inicio = "../assets/images/inicio.jpg";
-    this.opcao = [
-      "../assets/images/tesoura.jpg",
-      "../assets/images/papel.jpg",
-      "../assets/images/pedra.jpg",
-    ]; // Esta variavel foi criada para que lá na frente, poderemos embaralhar as opcoes e ramdomizar a opcao do computador.
+    // this.opcao = [
+    //   "../assets/images/tesoura.jpg",
+    //   "../assets/images/papel.jpg",
+    //   "../assets/images/pedra.jpg",
+    // ]; // Esta variavel foi criada para que lá na frente, poderemos embaralhar as opcoes e ramdomizar a opcao do computador.
     this.tesoura = "../assets/images/tesoura.jpg";
     this.papel = "../assets/images/papel.jpg";
     this.pedra = "../assets/images/pedra.jpg";
@@ -49,13 +49,13 @@ class Game {
       this.opcaoComputador = Math.random();
       if (this.opcaoComputador < 0.33333) {
         this.opcaoComputador = "pedra";
-        compJajogou = true;
+        this.compJajogou = true;
       } else if (this.opcaoComputador < 0.66666) {
         this.opcaoComputador = "papel";
-        compJajogou = true;
+        this.compJajogou = true;
       } else {
         this.opcaoComputador = "tesoura";
-        compJajogou = true;
+        this.compJajogou = true;
       }
     }
     return;

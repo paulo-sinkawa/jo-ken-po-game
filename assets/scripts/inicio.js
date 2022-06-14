@@ -1,53 +1,48 @@
-let h1 = document.getElementById("h1");
-h1.innerText = "Jo-Ken-Po"; // Somente para teste.
+// let h1 = document.getElementById("h1");
+// h1.innerText = "Ta funcionando inicio.html com inicio.js"; // Somente para teste.
 
 const gameBoard = document.getElementById("game-board");
-const iniciarBtn = document.getElementById("start");
+const escolherPedra = document.getElementById("pedra");
+const escolherPapel = document.getElementById("papel");
+const escolherTesoura = document.getElementById("tesoura");
 
-const game = new Game(gameBoard);
+let game = new Game(gameBoard);
 
-iniciarBtn.addEventListener("click", () => {
-  game.iniciaOJogo();
-});
-
-const jogarPedra = document.getElementById("pedra");
-const jogarPapel = document.getElementById("papel");
-const jogarTesoura = document.getElementById("tesoura");
-jogarPedra.addEventListener("click", () => {
+escolherPedra.addEventListener("click", () => {
   game.jogadaPedra();
+  game.jogadaComputador();
+  game.verificaVencedor();
 });
 
-jogarPapel.addEventListener("click", () => {
+escolherPapel.addEventListener("click", () => {
   game.jogadaPapel();
+  game.jogadaComputador();
+  game.verificaVencedor();
 });
 
-jogarTesoura.addEventListener("click", () => {
+escolherTesoura.addEventListener("click", () => {
   game.jogadaTesoura();
+  game.jogadaComputador();
+  game.verificaVencedor();
 });
 
-// Condicoes das jogadas.
+// iniciarBtn.addEventListener("click", () => {
+//   game.iniciaOJogo();
+// });
+//
+// const jogarPedra = document.getElementById("pedra");
+// const jogarPapel = document.getElementById("papel");
+// const jogarTesoura = document.getElementById("tesoura");
+// jogarPedra.addEventListener("click", () => {
+//   game.jogadaPedra();
+// });
 
-const pedra = "pedra"; // Como declarar se a variavel sera por "string" ou pela imagem ? Como vincular a opcao do jogador ? Existe as duas opcoes ?
-const tesoura = "tesoura";
-const papel = "papel";
+// jogarPapel.addEventListener("click", () => {
+//   game.jogadaPapel();
+// });
 
-const opcaoJogador = ""; // Verificar como será lancada a opcao do jogador e verificar qual foi a opcao.
+// jogarTesoura.addEventListener("click", () => {
+//   game.jogadaTesoura();
+// });
 
-// primeiraOpcao = opcaoJogador === rock && opcaoComputador === scissors;
-// segundaOpcao = opcaoJogador === scissors && opcaoComputador === paper;
-// terceiraOpcao = opcaoJogador === paper && opcaoComputador === rock;
-// quartaOpcao = opcaoComputador === rock && opcaoJogador === scissors;
-// quintaOpcao = opcaoComputador === scissors && opcaoJogador === paper;
-// sextaOpcao = opcaoComputador === paper && opcaoJogador === rock;
-// setimaOpcao = opcaoJogador === opcaoComputador;
-
-// if (primeiraOpcao  | | segundaOpcao | | terceiraOpcao) {
-//   console.log('Vitoria !');
-// } else if (quartaOpcao | |  quintaOpcao | |  sextaOpcao){
-//   console.log('Derrota !')
-// } else if (setimaOpcao) {
-//   console.log('Empate !');
-//   else {
-//     console.log('Erro ! Reinicie o jogo.')
-//   }
-// }
+// const opcaoJogador = ""; // Verificar como será lancada a opcao do jogador e verificar qual foi a opcao.

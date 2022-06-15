@@ -9,16 +9,19 @@ escolherPedra.addEventListener("click", () => {
   game.jogadaPedra();
   game.jogadaComputador();
   game.verificaVencedor();
+  document.location.reload();
 });
 
 escolherPapel.addEventListener("click", () => {
   game.jogadaPapel();
   game.jogadaComputador();
   game.verificaVencedor();
+  document.location.reload();
 });
 
 escolherTesoura.addEventListener("click", () => {
   game.jogadaTesoura();
   game.jogadaComputador();
   game.verificaVencedor();
+  document.location.reload();
 });

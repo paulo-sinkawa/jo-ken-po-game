@@ -59,54 +59,42 @@ class Game {
   verificaVencedor() {
     if (!this.existeVencedor) {
       if (this.opcaoJogador === "pedra" && this.opcaoComputador === "tesoura") {
-        alert(
-          "O computador escolheu tesoura, voce venceu ! Aperte F5 para jogar novamente"
-        );
+        alert("O computador escolheu tesoura, voce venceu !");
         this.existeVencedor = true;
         return;
       } else if (
         this.opcaoJogador === "tesoura" &&
         this.opcaoComputador === "papel"
       ) {
-        alert(
-          "O computador escolheu papel, voce venceu ! Aperte F5 para jogar novamente"
-        );
+        alert("O computador escolheu papel, voce venceu !");
         this.existeVencedor = true;
         return;
       } else if (
         this.opcaoJogador === "papel" &&
         this.opcaoComputador === "pedra"
       ) {
-        alert(
-          "O computador escolheu pedra, voce venceu ! Aperte F5 para jogar novamente"
-        );
+        alert("O computador escolheu pedra, voce venceu !");
         this.existeVencedor = true;
         return;
       } else if (
         this.opcaoComputador === "pedra" &&
         this.opcaoJogador === "tesoura"
       ) {
-        alert(
-          "O computador escolheu pedra, voce perdeu ! Aperte F5 para jogar novamente"
-        );
+        alert("O computador escolheu pedra, voce perdeu !");
         this.existeVencedor = true;
         return;
       } else if (
         this.opcaoComputador === "tesoura" &&
         this.opcaoJogador === "papel"
       ) {
-        alert(
-          "O computador escolheu tesoura, voce perdeu ! Aperte F5 para jogar novamente"
-        );
+        alert("O computador escolheu tesoura, voce perdeu !");
         this.existeVencedor = true;
         return;
       } else if (
         this.opcaoComputador === "papel" &&
         this.opcaoJogador === "pedra"
       ) {
-        alert(
-          "O computador escolheu papel, voce perdeu ! Aperte F5 para jogar novamente"
-        );
+        alert("O computador escolheu papel, voce perdeu !");
         this.existeVencedor = true;
         return;
       } else {

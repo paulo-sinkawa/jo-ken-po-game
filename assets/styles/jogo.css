@@ -1,12 +1,16 @@
 body {
-  background-color: blueviolet;
+  background-image: url(../images/background-2.jpg);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: darkblue;
 }
 
 button {
-  color: white;
-  width: 100px;
-  height: 50px;
-  font-size: 20px;
+  color: black;
+  width: 200px;
+  height: 80px;
+  font-size: 40px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: black;
@@ -19,8 +23,10 @@ img {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 70px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: white;
+  color: #3c42ff;
+  bottom: auto;
+  margin: 100px;
 }

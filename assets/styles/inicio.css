@@ -1,14 +1,19 @@
 body {
-  -moz-background-clip: content-box;
   text-align: center;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 img {
   width: 500px;
-  height: 350px;
-  margin: 15px;
+  height: 300px;
+  margin: 75px;
 }
 
 button {
@@ -18,7 +23,11 @@ button {
   font-size: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: black;
+  background-color: #3b3c46;
+  border-top-color: grey;
+  border-top-width: 10px;
+  border-right-color: grey;
+  border-right-width: 10px;
 }
 
 h1 {
@@ -27,7 +36,7 @@ h1 {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(145, 77, 77);
   bottom: auto;
-  margin: 100px;
+  margin: 50px;
 }
 
 h2 {
@@ -36,5 +45,5 @@ h2 {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(145, 77, 77);
   bottom: auto;
-  margin: 100px;
+  margin: 50px;
 }
